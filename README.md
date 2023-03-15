@@ -2,6 +2,8 @@
 
 
 ## Circadian Rhythm Using Mealtime Behavior
+[![DOI](https://zenodo.org/badge/612891674.svg)](https://zenodo.org/badge/latestdoi/612891674)
+
 
 ### Version 1.0
 
