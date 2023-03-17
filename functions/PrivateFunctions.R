@@ -38,7 +38,7 @@ Get.flic.batch <- function(x, names, id, updateProgress = NULL) {
 #'These functions return a trimmed dfm dataframe defined by the start and end date
 #' @param x A dfm dataframe.
 #' @param date_ini The start date as MM/DD/YYYY.
-#' #' @param date_ini The end date as MM/DD/YYYY.
+#' @param date_end The end date as MM/DD/YYYY.
 #' @name set.date
 #' @export
 
