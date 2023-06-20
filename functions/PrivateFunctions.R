@@ -23,6 +23,11 @@ Get.flic.batch <- function(x, names, id, updateProgress = NULL) {
       dfm <- rbind(dfm, tmp)
     }
   }
+  
+  if(!grepl('*M',dfm$Time[1])){
+    dfm$Time <- format(as.POSIXct(dfm$Time,format='%H:%M:%S'),format="%I:%M:%S %p")
+  }
+  
   dfm <- cbind(Date=dfm$Date, Time= dfm$Time, dfm[,which(colnames(dfm)=="W1"):which(colnames(dfm)=="W12")])
   dfm$TimeDate <- paste(dfm$Date, dfm$Time, sep = " ")
   dfm$TimeDate <-
